@@ -8,12 +8,12 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 3000,
       host: '0.0.0.0',
-      allowedHosts: 'all',   // 👈 allow all domains
+      allowedHosts: ['https://pet-shop-1-29df.onrender.com/'],   // 👈 allow all domains
     },
     preview: {
       port: 3000,
       host: '0.0.0.0',
-      allowedHosts: 'all',   // 👈 also for preview
+      allowedHosts: ['https://pet-shop-1-29df.onrender.com/'],   // 👈 also for preview
     },
     plugins: [react()],
     define: {
